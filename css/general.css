@@ -1,0 +1,314 @@
+/* bootstrap notes
+    xs to large:
+    @media(min-width:576px){}
+    @media(min-width:768px){}
+    @media(min-width:992px){}
+    @media(min-width:1200px){}
+*/
+/* 
+#433fb2
+#3d2b88
+is a good color
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: #290D5D;
+    margin-bottom: 60px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p.content {
+    text-align: justify;
+    color: #8273c1;
+}
+
+h1.content {
+    color: #9278ff;
+    font-size: 3em;
+}
+
+h1.current-page-name {
+    display: none;
+}
+
+header {
+    display: block;
+}
+
+hr#header-separator {
+    margin-top: 0;
+    height: 3px;
+    border: 0;
+    background: linear-gradient( 90deg, #290D5D, #210a4b 20%, #290D5D);
+}
+div#site-logo, div#navbar {
+    display: inline;
+    float: left;
+    /*background-color: yellow;*/
+}
+div#navbar {
+    padding-top: 35px;
+    padding-left: 252px; 
+    max-width: 100%;
+}
+#site-firstname-h1 {
+    color: #6c4fbe;
+    font-size: 4em;
+    margin-top: 0;
+}
+
+#site-lastname-h1 {
+    color: #45348d;
+    font-size: 3.5em;
+    padding-left: 130px;
+    margin-top: -18px;
+}
+
+.portfolio-back {
+    display: block;
+    margin-top: -10px;
+}
+.portfolio-item {
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* contact page stuff */
+#characterLeft {
+    color: #8273c1;
+}
+.limit{
+    color: #ff7a85;
+}
+.form-area {
+	padding: 0;
+	margin-left: -15px;
+}
+.form-control {
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background-color: #dbd4db;
+        border: solid 3px #271145;
+}
+.form-control:focus {
+  border-color: #6c4fbe;
+}
+.contact-button  {
+    border: 0;
+    background: #ff7a85;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    color:#271145;
+    width: 150px;
+}
+
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 15px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background-color: #dbd4db;
+        border: solid 3px #271145;
+    }
+
+    #custom-search-input .search-query:focus {
+        border-color: #6c4fbe;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#271145;
+    }
+
+/* Navigation Section */
+
+    nav ul {
+        list-style: none; 
+    }
+
+	nav ul li { 
+		float: left; 
+        margin: 0px 15px 15px 0;
+	}
+
+    nav ul li a {
+        display: block; width: 50px; height: 50px;
+    }
+	nav ul li:nth-child(odd) a {
+        background-color: #9278ff;
+    }
+    nav ul li:nth-child(even) a {
+        background-color: #ff7a85;
+    }
+	nav ul li:nth-child(1) a {
+        background-image: url(../icons/menu/home.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(2) a {
+        background-image: url(../icons/menu/about.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(3) a {
+        background-image: url(../icons/menu/resume.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(4) a {
+        background-image: url(../icons/menu/portfolio.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(5) a {
+        background-image: url(../icons/menu/blog.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(6) a {
+        background-image: url(../icons/menu/contact.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+    nav ul li a span {
+        font: 1em "Helvetica", sans-serif; text-transform: uppercase; 
+        position: relative; 
+        top: 50px;
+        display: none;
+    }
+    nav ul li a:hover span {
+        display: block;
+    }
+    nav ul li a:focus span {
+        display: block;
+    }
+
+    nav ul li:nth-child(1) a span {
+    color: #9278ff;
+    }
+    nav ul li:nth-child(2) a span {
+    color: #ff7a85;
+    }
+    nav ul li:nth-child(3) a span {
+    color: #9278ff;
+    }
+    nav ul li:nth-child(4) a span {
+    color: #ff7a85;
+    }
+    nav ul li:nth-child(5) a span {
+    color: #9278ff;
+    }
+    nav ul li:nth-child(6) a span {
+    color: #ff7a85;
+    }
+
+/* footer section */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+#footer-copyright {
+    color: #45348d;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+#footer-social-media-bar {
+    display: inline-block;
+}
+
+
+#footer-social-media-bar a:hover img {
+    background-color: #45348d;
+    border-radius: 5px;
+}
+
+#footer-social-media-bar a:hover {
+        text-decoration: none;
+}
+
+.footer-icons {
+    width: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+/* end footer seciton */
+
+/* =============================================== */
+/* Media Query Stuff */
+@media only screen and (max-width: 768px) {
+    h1.current-page-name {
+        display: block;
+        color: #9278ff;
+        font-size: 6em; 
+        text-align: center;
+    }
+    
+    h1.contact-lg {
+        display: none;
+    }
+
+        #footer-social-media-bar {
+        position: relative;
+        right: 25% !important;
+    }
+    
+    div#navbar {
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        margin-top: 25px;
+    }
+    
+    nav ul li a span {
+        font: 1em "Helvetica", sans-serif; text-transform: uppercase; 
+        position: relative; 
+        top: 50px;
+        display: block;
+    }
+    
+}

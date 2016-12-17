@@ -1,0 +1,276 @@
+/* bootstrap notes
+    xs to large:
+    @media(min-width:576px){}
+    @media(min-width:768px){}
+    @media(min-width:992px){}
+    @media(min-width:1200px){}
+*/
+/* 
+#433fb2
+#3d2b88
+is a good color
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: #290D5D;
+    margin-bottom: 60px;
+}
+
+header {
+    display: block;
+}
+
+#main-logo {
+    font-family: "Helvetica", "Arial", sans-serif;
+    margin-top: 15px;
+}
+
+div#navbar {
+    background-color: yellow;
+    display: block;
+    margin: 0 auto;
+}
+
+/* look into responsive text size in css and bootstrap */
+#main-blurb-h5 {
+    color: #3d2b88;
+    font-size: 2em;
+    padding-left: 7px;
+    opacity: 0.8;
+}
+#main-firstname-h1 {
+    color: #6c4fbe;
+    font-size: 10em;
+    margin-top: -25px;
+    overflow: hidden;
+}
+
+#main-lastname-h1 {
+    color: #45348d;
+    font-size: 8em;
+    padding-left: 310px;
+    margin-top: -25px;
+    overflow: hidden;
+}
+
+/* Main Navigation Section */
+nav ul {
+	list-style: none; 
+
+}
+	nav ul li { 
+		float: left; 
+        margin: 0 20px 30px 0;
+	}
+
+nav ul li a {
+	display: block; width: 100px; height: 100px;
+}
+	nav ul li:nth-child(odd) a {
+        background-color: #9278ff;
+    }
+    nav ul li:nth-child(even) a {
+        background-color: #ff7a85;
+    }
+	nav ul li:nth-child(1) a {
+        background-image: url(../icons/menu/home.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(2) a {
+        background-image: url(../icons/menu/about.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(3) a {
+        background-image: url(../icons/menu/resume.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(4) a {
+        background-image: url(../icons/menu/portfolio.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(5) a {
+        background-image: url(../icons/menu/blog.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+	nav ul li:nth-child(6) a {
+        background-image: url(../icons/menu/contact.svg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 90%;
+	}
+
+nav ul li a span {
+	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
+	position: absolute; 
+    left: 75%;
+    top: 425px;
+	display: none;
+}
+
+nav ul li a:hover span {
+	display: block;
+}
+nav ul li a:focus span {
+	display: block;
+}
+
+nav ul li:nth-child(1) a span {
+color: #9278ff;
+}
+nav ul li:nth-child(2) a span {
+color: #ff7a85;
+}
+nav ul li:nth-child(3) a span {
+color: #9278ff;
+}
+nav ul li:nth-child(4) a span {
+color: #ff7a85;
+}
+nav ul li:nth-child(5) a span {
+color: #9278ff;
+}
+nav ul li:nth-child(6) a span {
+color: #ff7a85;
+}
+/* Main Navigation Section End */
+
+#custom-search-input {
+    margin:0;
+    margin-top: 15px;
+    padding: 0;
+}
+
+    #custom-search-input .search-query {
+        padding-right: 3px;
+        padding-right: 4px \9;
+        padding-left: 15px;
+        padding-left: 4px \9;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+ 
+        margin-bottom: 0;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        border-radius: 0px;
+        background-color: #dbd4db;
+        border: solid 3px #271145;
+    }
+
+    #custom-search-input .search-query:focus {
+        border-color: #6c4fbe;
+    }
+ 
+    #custom-search-input button {
+        border: 0;
+        background: none;
+        /** belows styles are working good */
+        padding: 2px 5px;
+        margin-top: 2px;
+        position: relative;
+        left: -28px;
+        /* IE7-8 doesn't have border-radius, so don't indent the padding */
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        color:#271145;
+    }
+
+/* footer section */
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+}
+
+#footer-copyright {
+    color: #45348d;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}
+
+#footer-social-media-bar {
+    display: inline-block;
+}
+
+
+#footer-social-media-bar a:hover img {
+    background-color: #45348d;
+    border-radius: 5px;
+}
+
+#footer-social-media-bar a:hover {
+        text-decoration: none;
+}
+
+.footer-icons {
+    width: 30px;
+    margin-right: 5px;
+    position: relative;
+    top: 10px;
+}
+/* end footer seciton */
+
+/* =============================================== */
+/* Media Query Stuff */
+@media only screen and (max-width: 992px) {
+    div#navbar {
+        width: 400px;
+    }
+    nav ul li a span {
+	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
+	position: relative; 
+    left: 0px; top: 100px;
+	display: block;
+}
+
+}
+@media only screen and (max-width: 576px) {
+    body #main-blurb-h5 {
+        padding-left: 3px;
+    }
+
+   body #main-firstname-h1 { 
+       font-size: 6em; 
+       word-wrap: break-word;
+    }
+    
+    body #main-lastname-h1  { 
+        font-size: 5em;
+        margin-top: -15px;
+        padding-left: 185px;
+        word-wrap: break-word;
+        }
+
+    #footer-social-media-bar {
+        position: relative;
+        right: 25% !important;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    body #main-lastname-h1  { 
+        padding-left: 0px;
+    }
+
+}
+
+/* =============================================== */
