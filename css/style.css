@@ -71,6 +71,7 @@ nav ul {
 nav ul li a {
 	display: block; width: 100px; height: 100px;
 }
+
 	nav ul li:nth-child(odd) a {
         background-color: #9278ff;
     }
@@ -244,6 +245,10 @@ color: #ff7a85;
 
 }
 @media only screen and (max-width: 576px) {
+    p {
+        font-size: 25px;
+    }
+
     body #main-blurb-h5 {
         padding-left: 3px;
     }

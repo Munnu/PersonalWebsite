@@ -327,7 +327,7 @@ div#navbar {
 }
 
 #footer-social-media-bar a:hover {
-        text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-icons {
@@ -340,6 +340,12 @@ div#navbar {
 
 /* =============================================== */
 /* Media Query Stuff */
+@media only screen and (max-width: 576px) {
+    p {
+        font-size: 25px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
     h1.current-page-name {
         display: block;
