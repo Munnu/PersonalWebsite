@@ -70,11 +70,13 @@ div#site-logo, div#navbar {
     float: left;
     /*background-color: yellow;*/
 }
+
 div#navbar {
     padding-top: 35px;
     float:right;
     max-width: 100%;
 }
+
 #site-firstname-h1 {
     color: #6c4fbe;
     font-size: 4em;
@@ -121,7 +123,6 @@ div#navbar {
     height: 100px;
 }
 
-
 .thumb-blurb {
     height: 30px;
     padding-top: 6px;
@@ -142,6 +143,7 @@ div#navbar {
     position: relative;
     right: 0px;
 }
+
 /* contact page stuff */
 #characterLeft {
     color: #8273c1;
@@ -176,43 +178,42 @@ div#navbar {
     width: 150px;
 }
 
-    #custom-search-input .search-query {
-        padding-right: 3px;
-        padding-right: 4px \9;
-        padding-left: 15px;
-        padding-left: 4px \9;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
- 
-        margin-bottom: 0;
-        -webkit-border-radius: 0px;
-        -moz-border-radius: 0px;
-        border-radius: 0px;
-        background-color: #dbd4db;
-        border: solid 3px #271145;
-    }
+#custom-search-input .search-query {
+    padding-right: 3px;
+    padding-right: 4px \9;
+    padding-left: 15px;
+    padding-left: 4px \9;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
-    #custom-search-input .search-query:focus {
-        border-color: #6c4fbe;
-    }
- 
-    #custom-search-input button {
-        border: 0;
-        background: none;
-        /** belows styles are working good */
-        padding: 2px 5px;
-        margin-top: 2px;
-        position: relative;
-        left: -28px;
-        /* IE7-8 doesn't have border-radius, so don't indent the padding */
-        margin-bottom: 0;
-        -webkit-border-radius: 3px;
-        -moz-border-radius: 3px;
-        border-radius: 3px;
-        color:#271145;
-    }
+    margin-bottom: 0;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    background-color: #dbd4db;
+    border: solid 3px #271145;
+}
+
+#custom-search-input .search-query:focus {
+    border-color: #6c4fbe;
+}
+
+#custom-search-input button {
+    border: 0;
+    background: none;
+    /** belows styles are working good */
+    padding: 2px 5px;
+    margin-top: 2px;
+    position: relative;
+    left: -28px;
+    /* IE7-8 doesn't have border-radius, so don't indent the padding */
+    margin-bottom: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color:#271145;
+}
 
 /* Navigation Section */
-
     nav#main-upper-menu ul {
         list-style: none; 
     }
@@ -317,9 +318,9 @@ div#navbar {
 }
 
 #footer-social-media-bar {
-    display: inline-block;
+    display: block;
+    float: right;
 }
-
 
 #footer-social-media-bar a:hover img {
     background-color: #45348d;
@@ -340,9 +341,10 @@ div#navbar {
 
 /* =============================================== */
 /* Media Query Stuff */
-@media only screen and (max-width: 576px) {
-    p {
-        font-size: 25px;
+
+@media (max-width: 576px) {
+    p, p.content {
+        font-size: 20px;
     }
 }
 
@@ -358,9 +360,10 @@ div#navbar {
         display: none;
     }
 
-        #footer-social-media-bar {
+    #footer-social-media-bar {
         position: relative;
-        right: 25% !important;
+        float: none;
+        margin: 0 auto;
     }
     
     div#navbar {

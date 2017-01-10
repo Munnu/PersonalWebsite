@@ -12,8 +12,8 @@ is a good color
 */
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -43,6 +43,7 @@ div#navbar {
     padding-left: 7px;
     opacity: 0.8;
 }
+
 #main-firstname-h1 {
     color: #6c4fbe;
     font-size: 10em;
@@ -60,8 +61,7 @@ div#navbar {
 
 /* Main Navigation Section */
 nav ul {
-	list-style: none; 
-
+	list-style: none;
 }
 	nav ul li { 
 		float: left; 
@@ -151,7 +151,7 @@ color: #ff7a85;
 /* Main Navigation Section End */
 
 #custom-search-input {
-    margin:0;
+    margin: 0;
     margin-top: 15px;
     padding: 0;
 }
@@ -209,9 +209,9 @@ color: #ff7a85;
 }
 
 #footer-social-media-bar {
-    display: inline-block;
+    display: block;
+    float: right;
 }
-
 
 #footer-social-media-bar a:hover img {
     background-color: #45348d;
@@ -219,7 +219,7 @@ color: #ff7a85;
 }
 
 #footer-social-media-bar a:hover {
-        text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-icons {
@@ -237,12 +237,11 @@ color: #ff7a85;
         width: 400px;
     }
     nav ul li a span {
-	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
-	position: relative; 
-    left: 0px; top: 100px;
-	display: block;
-}
-
+    	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
+    	position: relative; 
+        left: 0px; top: 100px;
+    	display: block;
+    }
 }
 @media only screen and (max-width: 576px) {
     p {
@@ -263,7 +262,7 @@ color: #ff7a85;
         margin-top: -15px;
         padding-left: 185px;
         word-wrap: break-word;
-        }
+    }
         
     p {
         font-size: 25px;
@@ -271,7 +270,8 @@ color: #ff7a85;
 
     #footer-social-media-bar {
         position: relative;
-        right: 25% !important;
+        float: none;
+        margin: 0 auto;
     }
 }
 
