@@ -360,6 +360,13 @@ div#navbar {
         display: block;
         float: left;
         margin-top: 0 !important;
+        width: 100%;
+    }
+
+    nav#main-upper-menu {
+        margin: 0 auto;
+        width: 250px;
+
     }
 }
 
