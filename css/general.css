@@ -356,16 +356,18 @@ div#navbar {
         width: 100%;
     }
 
-}
-
-@media only screen and (max-width: 717px) {
     div#navbar {
-        float: none;
-    }  
-    
-    nav#main-upper-menu ul {
-        margin: 0 15px;
-    } 
+        display: block;
+        float: left;
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    nav#main-upper-menu {
+        margin: 0 auto;
+        width: 250px;
+
+    }
 }
 
 @media only screen and (max-width: 768px) {
