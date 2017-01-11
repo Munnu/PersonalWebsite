@@ -116,7 +116,8 @@ nav ul li a {
 	}
 
 nav ul li a span {
-	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
+	font: 2em "Helvetica", sans-serif;
+    text-transform: uppercase; 
 	position: absolute; 
     left: 75%;
     top: 425px;

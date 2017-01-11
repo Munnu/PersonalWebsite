@@ -269,7 +269,8 @@ div#navbar {
         background-size: 90%;
 	}
     nav#main-upper-menu ul li a span {
-        font: 1em "Helvetica", sans-serif; text-transform: uppercase; 
+        font: 1em "Helvetica", sans-serif;
+        text-transform: uppercase; 
         position: relative; 
         top: 50px;
         display: none;
@@ -373,11 +374,7 @@ div#navbar {
         margin-top: 25px;
     }
     
-    nav ul li a span {
-        font: 1em "Helvetica", sans-serif; text-transform: uppercase; 
-        position: relative; 
-        top: 50px;
+    nav#main-upper-menu ul li a span {
         display: block;
-    }
-    
+    } 
 }
