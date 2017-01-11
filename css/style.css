@@ -238,7 +238,8 @@ color: #ff7a85;
         width: 400px;
     }
     nav ul li a span {
-    	font: 2em "Helvetica", sans-serif; text-transform: uppercase; 
+    	font: 2em "Helvetica", sans-serif;
+        text-transform: uppercase; 
     	position: relative; 
         left: 0px; top: 100px;
     	display: block;
