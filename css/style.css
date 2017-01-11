@@ -262,14 +262,14 @@ color: #ff7a85;
         padding-left: 185px;
         word-wrap: break-word;
     }
-        
-    p {
-        font-size: 25px;
-    }
 
     #footer-social-media-bar {
         float: none;
         margin: 0 auto;
+    }
+    
+    .footer-icons {
+        margin-bottom: 10px;
     }
 }
 
