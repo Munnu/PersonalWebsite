@@ -245,9 +245,6 @@ color: #ff7a85;
     }
 }
 @media only screen and (max-width: 576px) {
-    p {
-        font-size: 25px;
-    }
 
     body #main-blurb-h5 {
         padding-left: 3px;
@@ -270,7 +267,6 @@ color: #ff7a85;
     }
 
     #footer-social-media-bar {
-        position: relative;
         float: none;
         margin: 0 auto;
     }

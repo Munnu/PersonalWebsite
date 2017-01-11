@@ -32,7 +32,7 @@ p.content {
 
 h1.content {
     color: #9278ff;
-    font-size: 3em;
+    font-size: 2em;
 }
 
 h1.current-page-name {
@@ -347,7 +347,7 @@ div#navbar {
     h1.current-page-name {
         display: block;
         color: #9278ff;
-        font-size: 6em; 
+        font-size: 4em; 
         text-align: center;
     }
     
@@ -356,7 +356,6 @@ div#navbar {
     }
 
     #footer-social-media-bar {
-        position: relative;
         float: none;
         margin: 0 auto;
     }
