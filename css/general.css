@@ -364,7 +364,7 @@ div#navbar {
     }
 
     nav#main-upper-menu {
-        margin-left: -20px;
+        margin: 0 auto;
         width: 250px;
 
     }
