@@ -178,6 +178,7 @@ div#navbar {
     width: 150px;
 }
 
+/* ============== Search Bar Section ============== */
 #custom-search-input .search-query {
     padding-right: 3px;
     padding-right: 4px \9;
@@ -186,6 +187,7 @@ div#navbar {
     /* IE7-8 doesn't have border-radius, so don't indent the padding */
 
     margin-bottom: 0;
+    margin-left: 10px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     border-radius: 0px;
