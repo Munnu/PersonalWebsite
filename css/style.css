@@ -31,7 +31,6 @@ header {
 }
 
 div#navbar {
-    background-color: yellow;
     display: block;
     margin: 0 auto;
 }
@@ -263,6 +262,10 @@ color: #ff7a85;
         word-wrap: break-word;
     }
 
+    nav ul {
+        margin-left: -35px;
+    }
+
     #footer-social-media-bar {
         float: none;
         margin: 0 auto;
@@ -273,10 +276,18 @@ color: #ff7a85;
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 420px) {
     body #main-lastname-h1  { 
         padding-left: 0px;
     }
+
+    nav ul li a {
+        width: 90px; height: 90px;
+    }
+
+nav ul li a span {
+    font-size: 150%;
+}
 
 }
 
