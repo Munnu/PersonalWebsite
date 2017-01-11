@@ -285,9 +285,10 @@ color: #ff7a85;
         width: 90px; height: 90px;
     }
 
-nav ul li a span {
-    font-size: 150%;
-}
+    nav ul li a span {
+        font-size: 150%;
+        top: 90px;
+    }
 
 }
 
