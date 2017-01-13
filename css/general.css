@@ -30,7 +30,7 @@ p.content {
     color: #8273c1;
 }
 
-h1.content {
+h1.content, h2.content {
     color: #9278ff;
     font-size: 2em;
 }
