@@ -58,9 +58,20 @@ hr#header-separator {
     margin-top: 15px;
 }
 
-div#navbar {
+div#navbar-lg {
     display: block;
     margin: 0 auto;
+}
+
+div#site-logo, div#navbar-sm {
+    float: left;
+    /*background-color: yellow;*/
+}
+
+div#navbar-sm {
+    padding-top: 35px;
+    float:right;
+    max-width: 100%;
 }
 
 /* for large logo version */
@@ -120,9 +131,9 @@ div#navbar {
 
     margin-bottom: 0;
     margin-left: 10px;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     background-color: #dbd4db;
     border: solid 3px #271145;
 }
@@ -148,120 +159,100 @@ div#navbar {
 }
 /* ============== End Search Bar Section ============== */
 
+/* navigation section */
 /* shared between general.css and style.css */
-	nav ul li:nth-child(odd) a {
+    nav.navmenu ul li:nth-child(odd) a {
         background-color: #9278ff;
     }
-    nav ul li:nth-child(even) a {
+    nav.navmenu ul li:nth-child(even) a {
         background-color: #ff7a85;
     }
-	nav ul li:nth-child(1) a {
+    nav.navmenu ul li:nth-child(1) a {
         background-image: url(../icons/menu/home.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-	nav ul li:nth-child(2) a {
+    }
+    nav.navmenu ul li:nth-child(2) a {
         background-image: url(../icons/menu/about.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-	nav ul li:nth-child(3) a {
+    }
+    nav.navmenu ul li:nth-child(3) a {
         background-image: url(../icons/menu/resume.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-	nav ul li:nth-child(4) a {
+    }
+    nav.navmenu ul li:nth-child(4) a {
         background-image: url(../icons/menu/portfolio.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-	nav ul li:nth-child(5) a {
+    }
+    nav.navmenu ul li:nth-child(5) a {
         background-image: url(../icons/menu/blog.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-	nav ul li:nth-child(6) a {
+    }
+    nav.navmenu ul li:nth-child(6) a {
         background-image: url(../icons/menu/contact.svg);
         background-repeat: no-repeat;
         background-position: center; 
         background-size: 90%;
-	}
-
-	nav ul li:nth-child(1) a span {
-		color: #9278ff;
-	}
-	nav ul li:nth-child(2) a span {
-		color: #ff7a85;
-	}
-	nav ul li:nth-child(3) a span {
-		color: #9278ff;
-	}
-	nav ul li:nth-child(4) a span {
-		color: #ff7a85;
-	}
-	nav ul li:nth-child(5) a span {
-		color: #9278ff;
-	}
-	nav ul li:nth-child(6) a span {
-		color: #ff7a85;
-	}
-	
-	nav ul {
-		list-style: none;
-	}
-
-	nav ul li a:hover span {
-		display: block;
-	}
-	nav ul li a:focus span {
-		display: block;
-	}
-	
-/* from style.css */
-	nav ul li a {
-		display: block; width: 100px; height: 100px;
-	}
-	
-	nav ul li { 
-		float: left; 
-        margin: 0 20px 30px 0;
-	}
-
-	nav ul li a span {
-		font: 2em "Helvetica", sans-serif;
-		text-transform: uppercase; 
-		position: absolute; 
-		left: 75%;
-		top: 425px;
-		display: none;
-	}
-
-/* from general.css */
-	nav#main-upper-menu ul li { 
-		float: left; 
-        margin: 0px 15px 15px 0;
-	}
-
-    nav#main-upper-menu ul li a {
-        display: block; width: 50px; height: 50px;
-    }
-	
-	nav#main-upper-menu ul li a span {
-        font: 1em "Helvetica", sans-serif;
-        text-transform: uppercase; 
-        position: relative; 
-        top: 50px;
-        display: none;
     }
 
-/* navigation section */
+    nav.navmenu ul li:nth-child(1) a span {
+        color: #9278ff;
+    }
+    nav.navmenu ul li:nth-child(2) a span {
+        color: #ff7a85;
+    }
+    nav.navmenu ul li:nth-child(3) a span {
+        color: #9278ff;
+    }
+    nav.navmenu ul li:nth-child(4) a span {
+        color: #ff7a85;
+    }
+    nav.navmenu ul li:nth-child(5) a span {
+        color: #9278ff;
+    }
+    nav.navmenu ul li:nth-child(6) a span {
+        color: #ff7a85;
+    }
+    
+    nav.navmenu ul {
+        list-style: none;
+    }
 
+    nav.navmenu ul li a:hover span, 
+    nav#main-upper-menu ul li a:hover span {
+        display: block;
+    }
+    nav.navmenu ul li a:focus span {
+        display: block;
+    }
 /* end navigation section */
+
+/* gallery filter category section */
+div#portfolio-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+div#portfolio-nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+div#portfolio-nav li:not(:first-child):before {
+    content: " | ";
+    color: #45348d;
+}
+/* end gallery filter category section */
+
 
 /* gallery thumbnail section */
 .portfolio-back {
@@ -281,6 +272,7 @@ div#navbar {
 }
 
 .thumb-overlay {
+    background-color: #000;
     background-color: rgba(0,0,0, 0.8);
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
@@ -315,7 +307,7 @@ div#navbar {
 
 .darrow {
     position: relative;
-    right: 0px;
+    right: 0;
 }
 /* end gallery thumbnail section */
 
@@ -328,9 +320,9 @@ div#navbar {
 }
 
 .form-control {
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    border-radius: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
     background-color: #dbd4db;
     border: solid 3px #271145;
 }
@@ -389,147 +381,3 @@ div#navbar {
     top: 10px;
 }
 /* end footer section */
-
-/* =============================================== */
-/* Media Query Stuff */
-
-/* from general.css */
-@media only screen and (max-width: 350px) {
-    div#navbar {
-        float: none;
-    }  
-    
-    nav#main-upper-menu ul {
-        margin: 0 15px;
-    }
-}
-
-/* from style.css */
-@media only screen and (max-width: 420px) {
-    body #main-lastname-h1  { 
-        padding-left: 0px;
-    }
-
-    nav ul li a {
-        width: 90px; height: 90px;
-    }
-
-    nav ul li a span {
-        font-size: 150%;
-        top: 90px;
-    }
-}
-
-/* from style.css */
-@media only screen and (max-width: 576px) {
-
-    body #main-blurb-h5 {
-        padding-left: 3px;
-    }
-
-    body #main-firstname-h1 { 
-       font-size: 6em; 
-       word-wrap: break-word;
-    }
-    
-    body #main-lastname-h1  { 
-        font-size: 5em;
-        margin-top: -15px;
-        padding-left: 185px;
-        word-wrap: break-word;
-    }
-
-    nav ul {
-        margin-left: -35px;
-    }
-
-    #footer-social-media-bar {
-        float: none;
-        margin: 0 auto;
-    }
-    
-    .footer-icons {
-        margin-bottom: 10px;
-    }
-	
-	/* from general.css */
-	div#site-logo {
-        width: 100%;
-    }
-
-    div#navbar {
-        display: block;
-        float: left;
-        margin-top: 0 !important;
-        width: 100%;
-    }
-
-    nav#main-upper-menu {
-        margin: 0 auto;
-        width: 250px;
-
-    }
-}
-
-/* from general.css */
-@media only screen and (max-width: 768px) {
-    h1.current-page-name {
-        display: block;
-        color: #9278ff;
-        font-size: 4em; 
-        text-align: center;
-    }
-    
-    h1.header-title-default {
-        display: none;
-    }
-
-    .portfolio-item {
-        float: none;
-        display: block;
-        margin: 0 auto;
-        width: 100%;
-    }
-
-    .contact-button {
-        float: none !important;
-        margin: 20px auto;
-        width: 100%;
-        height: 50px;
-        font-size: 1.2em;
-        display: block;
-    }
-
-    #footer-social-media-bar {
-        float: none;
-        margin: 0 auto;
-    }
-    .footer-icons {
-        margin-bottom: 10px;
-    }
-    
-    div#navbar {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        margin-top: 25px;
-    }
-    
-    nav#main-upper-menu ul li a span {
-        display: block;
-    } 
-}
-
-/* from style.css */
-@media only screen and (max-width: 992px) {
-    div#navbar {
-        width: 400px;
-    }
-    nav ul li a span {
-    	font: 2em "Helvetica", sans-serif;
-        text-transform: uppercase; 
-    	position: relative; 
-        left: 0px; top: 100px;
-    	display: block;
-    }
-}
