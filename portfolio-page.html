@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     
     <head>
         <meta charset="utf-8">
@@ -8,7 +8,9 @@
         <meta name="description" content="The portfolio and blog of Monique Blake">
         <title>Monique Blake's Portfolio and Blog</title>
         <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
-        <link rel="stylesheet" href="./css/general.css">
+
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/otherpages.css">
     </head>
     <body>
     
@@ -22,36 +24,36 @@
         </div>
 
     <!-- Navbar Section -->
-        <div id="navbar">
-        <nav id="main-upper-menu">
+        <div id="navbar-sm">
+        <nav id="main-upper-menu" class="navmenu">
 		<ul>
             <li>
-				<a href="#" alt="Home">
+				<a href="#" title="Home">
 					<span>Home</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="About">
+				<a href="#" title="About">
 					<span>About</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="Resume">
-					<span>Resumé</span>
+				<a href="#" title="Resum&eacute;">
+					<span>Resum&eacute;</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="Portfolio">
+				<a href="#" title="Portfolio">
 					<span>P.folio</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="Blog">
+				<a href="#" title="Blog">
 					<span>Blog</span>
 				</a>
 			</li>
 			<li>
-				<a href="#" alt="Contact">
+				<a href="#" title="Contact">
 					<span>Mail</span>
 				</a>
 			</li>
@@ -83,12 +85,15 @@
         
     <article>
         <div class="container content">
+			<header>
             <h1 class="current-page-name">Portfolio</h1>
             <h1 class="content header-title-default">Portfolio</h1>
+			</header>
                 <!-- portfolio navigation -->
                 <div id="portfolio-nav">
                     <nav>
                         <ul>
+                            <li><a href="#">All</a></li>
                             <li><a href="#">Engineering</a></li>
                             <li><a href="#">Art</a></li>
                             <li><a href="#">Music</a></li>
@@ -99,12 +104,12 @@
                 <!-- end portfolio navigation -->
             
                 <!-- portfolio thumbnails -->
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch
                         <span class="darrow">&darr;</span>
                         <span class="thumb-summary">
@@ -113,14 +118,14 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
+                    </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch &darr;
                         <span class="thumb-summary">
                             This is a description of the thumbnail.
@@ -128,13 +133,13 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch &darr;
                         <span class="thumb-summary">
                             This is a description of the thumbnail.
@@ -142,43 +147,14 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
-                    </a>
-                    <span class="thumb-overlay">
-                        <p class="thumb-blurb">RO Concept Sketch &darr;
-                        <span class="thumb-summary">
-                            This is a description of the thumbnail.
-                            Here is some more stuff that is written here
-                            to see how things overflow. Adding an extra line just in case. Blah blah.
-                        </span>
-                        </p>
-                    </span>
-                </div>
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
-                    <a class="thumbnail" href="#">
-                        <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
-                    </a>
-                    <span class="thumb-overlay">
-                        <p class="thumb-blurb">RO Concept Sketch &darr;
-                        <span class="thumb-summary">
-                            This is a description of the thumbnail.
-                            Here is some more stuff that is written here
-                            to see how things overflow. Adding an extra line just in case. Blah blah.
-                        </span>
-                        </p>
-                    </span>
+                    </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch &darr;
                         <span class="thumb-summary">
                             This is a description of the thumbnail.
@@ -186,13 +162,42 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
+                        <p class="thumb-blurb">RO Concept Sketch &darr;
+                        <span class="thumb-summary">
+                            This is a description of the thumbnail.
+                            Here is some more stuff that is written here
+                            to see how things overflow. Adding an extra line just in case. Blah blah.
+                        </span>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
+                    </a>
+                    <div class="thumb-overlay">
+                        <p class="thumb-blurb">RO Concept Sketch &darr;
+                        <span class="thumb-summary">
+                            This is a description of the thumbnail.
+                            Here is some more stuff that is written here
+                            to see how things overflow. Adding an extra line just in case. Blah blah.
+                        </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
+                    </a>
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch
                         &darr;
                         <span class="thumb-summary">
@@ -201,14 +206,14 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
+                    </div>
                 </div>
 
-                <div class="col-lg-3 col-md-4 col-xs-12 thumb">
+                <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 thumb">
                     <a class="thumbnail" href="#">
                         <img class="img-responsive" src="images/chara-fullbody.jpg" alt="RO doodle">
                     </a>
-                    <span class="thumb-overlay">
+                    <div class="thumb-overlay">
                         <p class="thumb-blurb">RO Concept Sketch &darr;
                         <span class="thumb-summary">
                             This is a description of the thumbnail.
@@ -216,37 +221,37 @@
                             to see how things overflow. Adding an extra line just in case. Blah blah.
                         </span>
                         </p>
-                    </span>
+                    </div>
                 </div>
                 <!-- end portfolio thumbnails -->
         </div>
     </article>
 
-        <!-- --------------- Footer Section --------------- -->
+        <!-- ================= Footer Section ================= -->
         <footer class="footer col-lg-12">
             <div class="container">
                 <div id="footer-copyright">
                     <p>
-                        Copyright &copy; 2013-{{ currentYear }} Monique Blake. All Rights Reserved.
+						Copyright &copy; 2013-{{ currentYear }} Monique Blake. All Rights Reserved.
                     </p>
                 </div>
                 
                 <!-- Social Media Icons -->
                 <div id="footer-social-media-bar">
                     <a href="https://github.com/Munnu/">
-                        <img class="footer-icons" src="./icons/github.svg" border="0" alt="View Monique Blake's profile on GitHub">
+                        <img class="footer-icons" src="./icons/github.svg"  alt="View Monique Blake's profile on GitHub">
                     </a>
                     
                     <a href="https://www.linkedin.com/pub/monique-blake/56/161/a13">
-                        <img class="footer-icons" src="./icons/linkedin.svg" border="0" alt="View Monique Blake's profile on LinkedIn">
+                        <img class="footer-icons" src="./icons/linkedin.svg"  alt="View Monique Blake's profile on LinkedIn">
                     </a>
                     
                     <a href="https://twitter.com/moniqueblake0">
-                        <img class="footer-icons" src="./icons/twitter.svg" border="0" alt="View Monique Blake's profile on Twitter">
+                        <img class="footer-icons" src="./icons/twitter.svg"  alt="View Monique Blake's profile on Twitter">
                     </a>
                     
                     <a href="http://www.instructables.com/member/MunnuB/">
-                        <img class="footer-icons" src="./icons/robot.svg" border="0" alt="View Monique Blake's profile on Instructables">
+                        <img class="footer-icons" src="./icons/robot.svg"  alt="View Monique Blake's profile on Instructables">
                     </a>
                     
                 </div>
