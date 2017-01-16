@@ -30,7 +30,7 @@ header {
     margin-top: 15px;
 }
 
-div#navbar {
+div#navbar-lg {
     display: block;
     margin: 0 auto;
 }
@@ -233,7 +233,7 @@ color: #ff7a85;
 /* =============================================== */
 /* Media Query Stuff */
 @media only screen and (max-width: 992px) {
-    div#navbar {
+    div#navbar-lg {
         width: 400px;
     }
     nav ul li a span {
