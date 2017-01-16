@@ -1,7 +1,9 @@
 /* Navigation Section */
 /* from style.css */
     nav ul li a {
-        display: block; width: 100px; height: 100px;
+        display: block;
+        width: 100px;
+        height: 100px;
     }
     
     nav ul li { 
@@ -13,8 +15,8 @@
         font: 2em "Helvetica", sans-serif;
         text-transform: uppercase; 
         position: absolute; 
-        left: 75%;
-        top: 425px;
+        left: 100%;
+        top: 70px;
         display: none;
     }
 
@@ -23,11 +25,12 @@
 
 @media only screen and (max-width: 420px) {
     body #main-lastname-h1  { 
-        padding-left: 0px;
+        padding-left: 0;
     }
 
     nav ul li a {
-        width: 90px; height: 90px;
+        width: 90px;
+        height: 90px;
     }
 
     nav ul li a span {
@@ -66,6 +69,7 @@
     .footer-icons {
         margin-bottom: 10px;
     }
+}
 
 @media only screen and (max-width: 992px) {
     div#navbar-lg {

@@ -222,16 +222,19 @@ div#navbar-sm {
     nav.navmenu ul li:nth-child(6) a span {
         color: #ff7a85;
     }
-    
+
     nav.navmenu ul {
         list-style: none;
+        position: relative;
+        float: left;
+    }
+
+    nav.navmenu ul li a:focus span {
+        display: block;
     }
 
     nav.navmenu ul li a:hover span, 
     nav#main-upper-menu ul li a:hover span {
-        display: block;
-    }
-    nav.navmenu ul li a:focus span {
         display: block;
     }
 /* end navigation section */
