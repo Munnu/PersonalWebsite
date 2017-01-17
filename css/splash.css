@@ -75,6 +75,12 @@
     div#navbar-lg {
         width: 400px;
     }
+	
+    nav ul li { 
+        float: left; 
+        margin: 0 20px 45px 0;
+    }
+	
     nav ul li a span {
         font: 2em "Helvetica", sans-serif;
         text-transform: uppercase; 
