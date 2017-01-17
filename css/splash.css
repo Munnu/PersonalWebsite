@@ -86,3 +86,9 @@
     }
     
 }
+
+@media only screen and (max-width: 350px) {
+    body #main-firstname-h1, body #main-lastname-h1 {
+        font-size: 5em;
+    }
+}

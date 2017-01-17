@@ -19,37 +19,6 @@
 /* =============================================== */
 /* Media Query Stuff */
 
-@media only screen and (max-width: 350px) {
-    div#navbar {
-        float: none;
-    }  
-    
-    nav#main-upper-menu ul {
-        margin: 0 15px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    
-    /* from general.css */
-    div#site-logo {
-        width: 100%;
-    }
-
-    div#navbar-sm {
-        display: block;
-        float: left;
-        margin-top: 0 !important;
-        width: 100%;
-    }
-
-    nav#main-upper-menu {
-        margin: 0 auto;
-        width: 250px;
-
-    }
-}
-
 @media only screen and (max-width: 768px) {
     h1.current-page-name {
         display: block;
@@ -96,4 +65,35 @@
     nav#main-upper-menu ul li a span {
         display: block;
     } 
+}
+
+@media only screen and (max-width: 576px) {
+    
+    /* from general.css */
+    div#site-logo {
+        width: 100%;
+    }
+
+    div#navbar-sm {
+        display: block;
+        float: left;
+        margin-top: 0 !important;
+        width: 100%;
+    }
+
+    nav#main-upper-menu {
+        margin: 0 auto;
+        width: 250px;
+
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    div#navbar {
+        float: none;
+    }  
+    
+    nav#main-upper-menu ul {
+        margin: 0 15px;
+    }
 }
