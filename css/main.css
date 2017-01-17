@@ -237,6 +237,15 @@ div#navbar-sm {
     nav#main-upper-menu ul li a:hover span {
         display: block;
     }
+	
+	/* this will allow for hover to take precedence 
+	over focus and remove overlapping spans */
+	nav.navmenu ul:hover li a:focus span {
+	  display: none;
+	}
+	#navbar-lg ul li a:hover span, nav ul li a:focus span {
+	  display: block;
+	}
 /* end navigation section */
 
 /* gallery filter category section */
